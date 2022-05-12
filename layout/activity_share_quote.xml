@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ShareQuoteActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bar"
+        android:background="#FFC107">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFC107"
+
+            android:id="@+id/toolbar">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:text="SHARE"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose a photo related to the movie"
+            android:id="@+id/selectImageText"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="#FFC107"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:id="@+id/imageadded"/>
+
+
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Movie/Series name"
+            android:tag="true"
+            android:maxLength="50"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:maxLines="5"
+            android:id="@+id/filmname"/>
+
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="Quote"
+            android:tag="true"
+            android:maxLength="350"
+            android:maxLines="5"
+            android:id="@+id/description"/>
+
+
+
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:background="@drawable/button_backgroud"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            />
+
+        <TextView
+            android:id="@+id/tagtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="15dp"
+            android:textSize="12sp"/>
+
+
+        <RadioGroup
+            android:layout_marginTop="20dp"
+            android:id="@+id/groupradio"
+            android:layout_marginLeft="10dp"
+
+            android:layout_below="@id/bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioMovie"
+                android:layout_marginTop="10dp"
+                android:text="Movie"
+                android:textSize="20dp"/>
+
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioSeries"
+                android:text="Series"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"/>
+
+        </RadioGroup>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

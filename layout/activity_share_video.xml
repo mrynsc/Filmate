@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ShareVideoActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFC107"
+        android:id="@+id/bar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFC107"
+            android:id="@+id/toolbar">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/uploadVideoBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:text="SHARE"
+
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!--    Video Title-->
+    <EditText
+        android:id="@+id/titleEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bar"
+        android:layout_marginTop="5dp"
+        android:hint="Movie/Series name"
+        android:inputType="textPersonName|textCapSentences"
+        android:maxLength="50"
+        android:padding="10dp"
+        android:tag="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/videoDescEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleEt"
+        android:layout_marginTop="10dp"
+        android:hint="Description(optional)"
+        android:inputType="textPersonName|textCapSentences"
+        android:maxLength="70"
+        android:padding="10dp"
+        android:tag="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/videoDescEt"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:id="@+id/goGallery"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/videoView"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_baseline_video_library_24"
+        app:tint="#FFC107" />
+
+
+    <RadioGroup
+        android:layout_marginTop="8dp"
+        android:id="@+id/groupradio"
+        android:layout_marginLeft="10dp"
+
+        android:layout_below="@id/goGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioMovie"
+            android:layout_marginTop="8dp"
+            android:text="Movie"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioSeries"
+            android:text="Series"
+            android:layout_marginTop="8dp"
+            android:textSize="20dp"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/postUploadChooseThumbnail"
+        android:layout_below="@+id/videoView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="60dp"
+        android:text="Thumbnail(optional)"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/postUploadChooseThumbnail"
+        android:layout_width="130dp"
+        android:layout_height="220dp"
+        android:layout_below="@id/goGallery"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="40dp" />
+
+
+
+
+</RelativeLayout>

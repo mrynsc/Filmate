@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:backgroundTint="@color/primary"
+    android:background="@drawable/bg_progress"
+    android:padding="16dp">
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/listTitleEt"
+        android:maxLength="40"
+        android:background="@drawable/bg_progress"
+        android:backgroundTint="@color/black_shade"
+        android:hint="List Title"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/listDescEt"
+        android:textColor="@color/white"
+        android:gravity="start"
+        android:textColorHint="@color/white"
+        android:background="@drawable/bg_progress"
+        android:backgroundTint="@color/black_shade"
+        android:maxLength="120"
+        android:hint="Description"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:textOff="Public"
+        android:textOn="Private"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:layout_margin="15dp"
+        android:id="@+id/createList"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Create List" />
+
+
+
+</LinearLayout>

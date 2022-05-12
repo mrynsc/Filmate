@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/goTwitter"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/bg_screen3"
+        android:text="Twitter" />
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/goInstagram"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="?android:attr/selectableItemBackground"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dot_dark_screen4"
+        android:text="Instagram" />
+
+</LinearLayout>

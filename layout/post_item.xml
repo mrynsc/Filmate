@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="10dp"
+    android:elevation="10dp"
+    android:layout_marginHorizontal="15dp"
+    android:layout_marginVertical="15dp"
+    app:cardCornerRadius="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/more"
+        android:src="@drawable/person_24"
+        android:layout_margin="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E4DDE0"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/profile_image"
+                android:layout_margin="5dp"
+                android:src="@drawable/unkown_person_24"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/username"
+                android:layout_margin="5dp"
+                android:text=""
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+
+
+
+        </LinearLayout>
+        <View style="@style/Divider"
+            android:backgroundTint="#EA8E08"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1dp">
+
+            <ImageView
+                android:id="@+id/tagfilm"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_movie_24"
+                app:tint="#2E86CC" />
+
+            <TextView
+                android:id="@+id/filmname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="9dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@+id/tagfilm"
+                android:layout_toRightOf="@+id/tagfilm" />
+
+
+
+        </RelativeLayout>
+
+
+
+        <View style="@style/Divider"
+            android:backgroundTint="#EA8E08"
+            android:layout_marginBottom="2dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1dp">
+
+            <ImageView
+                android:id="@+id/tagdescription"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_create_24"
+                app:tint="#2E86CC" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/tagdescription"
+                android:layout_toRightOf="@+id/tagdescription"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+
+        </RelativeLayout>
+
+
+
+        <View style="@style/Divider"
+            android:backgroundTint="#EA8E08"
+            android:layout_marginBottom="2dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1dp">
+
+            <ImageView
+                android:id="@+id/taglabel"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_label_24"
+                app:tint="#2E86CC" />
+
+            <TextView
+                android:id="@+id/tagname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="9dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@+id/taglabel"
+                android:layout_toRightOf="@+id/taglabel" />
+
+
+        </RelativeLayout>
+        <View style="@style/Divider"
+            android:backgroundTint="#EA8E08"
+            android:layout_marginBottom="4dp"/>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/post_image"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View style="@style/Divider"
+            android:backgroundTint="#EA8E08"
+            android:layout_marginTop="8dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/like"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_favorite_border_24"
+                app:tint="#FFC107" />
+
+            <ImageView
+                android:id="@+id/comment"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/like"
+                android:layout_toRightOf="@+id/like"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/comments_outline_24" />
+
+
+            <ImageView
+                android:id="@+id/reportQuote"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+
+                android:layout_alignParentRight="true"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_baseline_more_vert_24"
+                app:tint="@color/black" />
+
+            <ImageView
+                android:id="@+id/save"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@id/reportQuote"
+                android:src="@drawable/save_24"
+                app:tint="@color/black" />
+
+        </RelativeLayout>
+        <View style="@style/Divider"
+            android:backgroundTint="#EA8E08"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:id="@+id/liketext"
+            android:text=""
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"/>
+
+        <View style="@style/Divider"
+            android:backgroundTint="#EA8E08"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:layout_marginBottom="5dp"
+            android:textColor="#270909"
+            android:id="@+id/no_of_comments"
+            android:layout_marginLeft="10dp" />
+
+
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
